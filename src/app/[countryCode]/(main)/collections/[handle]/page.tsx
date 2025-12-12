@@ -15,6 +15,7 @@ type Props = {
   }>
 }
 
+export const revalidate = 60 // Revalidate every 60 seconds
 export const PRODUCT_LIMIT = 12
 
 export async function generateStaticParams() {

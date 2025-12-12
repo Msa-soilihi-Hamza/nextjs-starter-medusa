@@ -11,6 +11,8 @@ export const metadata: Metadata = {
     "A performant frontend ecommerce starter template with Next.js 15 and Medusa.",
 }
 
+export const revalidate = 60 // Revalidate every 60 seconds
+
 export default async function Home(props: {
   params: Promise<{ countryCode: string }>
 }) {

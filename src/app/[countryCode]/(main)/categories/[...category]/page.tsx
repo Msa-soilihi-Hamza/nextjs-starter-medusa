@@ -15,6 +15,8 @@ type Props = {
   }>
 }
 
+export const revalidate = 60 // Revalidate every 60 seconds
+
 export async function generateStaticParams() {
   const product_categories = await listCategories()
 

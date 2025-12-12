@@ -8,6 +8,8 @@ export const metadata: Metadata = {
   description: "Explore all of our products.",
 }
 
+export const revalidate = 3600 // Cache for 1 hour, revalidate on-demand via API
+
 type Params = {
   searchParams: Promise<{
     sortBy?: SortOptions

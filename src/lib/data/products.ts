@@ -51,6 +51,8 @@ export const listProducts = async ({
 
   const next = {
     ...(await getCacheOptions("products")),
+    revalidate: 3600, // Cache for 1 hour, but can be revalidated on-demand
+    tags: ["products"], // Tag for on-demand revalidation
   }
 
   return sdk.client
@@ -68,7 +70,6 @@ export const listProducts = async ({
         },
         headers,
         next,
-        cache: "force-cache",
       }
     )
     .then(({ products, count }) => {
