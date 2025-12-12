@@ -1,0 +1,21 @@
+{
+  "common": {
+    "menu": "Menu",
+    "home": "Accueil",
+    "store": "Boutique",
+    "account": "Compte",
+    "cart": "Panier",
+    "search": "Rechercher",
+    "copyright": "Tous droits réservés"
+  },
+  "product": {
+    "add_to_cart": "Ajouter au panier",
+    "out_of_stock": "Rupture de stock",
+    "select_variant": "Sélectionner une variante",
+    "select_options": "Sélectionner les options",
+    "select": "Sélectionner",
+    "from": "À partir de",
+    "original": "Prix initial",
+    "shipping_to": "Livraison vers"
+  }
+}

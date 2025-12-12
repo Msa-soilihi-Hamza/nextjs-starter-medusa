@@ -1,0 +1,21 @@
+{
+  "common": {
+    "menu": "Menu",
+    "home": "Home",
+    "store": "Store",
+    "account": "Account",
+    "cart": "Cart",
+    "search": "Search",
+    "copyright": "All rights reserved"
+  },
+  "product": {
+    "add_to_cart": "Add to cart",
+    "out_of_stock": "Out of stock",
+    "select_variant": "Select variant",
+    "select_options": "Select Options",
+    "select": "Select",
+    "from": "From",
+    "original": "Original",
+    "shipping_to": "Shipping to"
+  }
+}
