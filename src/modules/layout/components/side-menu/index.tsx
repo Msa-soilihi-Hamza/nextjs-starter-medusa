@@ -8,6 +8,7 @@ import { Fragment } from "react"
 import LocalizedClientLink from "@modules/common/components/localized-client-link"
 import CountrySelect from "../country-select"
 import { HttpTypes } from "@medusajs/types"
+import { useI18n } from "@lib/i18n/context"
 
 const SideMenuItems = {
   Home: "/",
@@ -18,6 +19,7 @@ const SideMenuItems = {
 
 const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
   const toggleState = useToggleState()
+  const t = useI18n()
 
   return (
     <div className="h-full">
@@ -30,7 +32,7 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
                   data-testid="nav-menu-button"
                   className="relative h-full flex items-center transition-all ease-out duration-200 focus:outline-none hover:text-ui-fg-base"
                 >
-                  Menu
+                  {t("nav.menu")}
                 </Popover.Button>
               </div>
 
@@ -64,6 +66,7 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
                     </div>
                     <ul className="flex flex-col gap-6 items-start justify-start">
                       {Object.entries(SideMenuItems).map(([name, href]) => {
+                        const translationKey = `nav.${name.toLowerCase()}` as keyof ReturnType<typeof useI18n>
                         return (
                           <li key={name}>
                             <LocalizedClientLink
@@ -72,7 +75,7 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
                               onClick={close}
                               data-testid={`${name.toLowerCase()}-link`}
                             >
-                              {name}
+                              {t(translationKey)}
                             </LocalizedClientLink>
                           </li>
                         )
@@ -98,8 +101,7 @@ const SideMenu = ({ regions }: { regions: HttpTypes.StoreRegion[] | null }) => {
                         />
                       </div>
                       <Text className="flex justify-between txt-compact-small">
-                        © {new Date().getFullYear()} Medusa Store. All rights
-                        reserved.
+                        © {new Date().getFullYear()} Medusa Store. {t("footer.copyright")}
                       </Text>
                     </div>
                   </div>

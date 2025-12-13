@@ -1,6 +1,7 @@
 import { getBaseURL } from "@lib/util/env"
 import { Metadata } from "next"
 import "styles/globals.css"
+import { I18nProvider } from "@lib/i18n/context"
 
 export const metadata: Metadata = {
   metadataBase: new URL(getBaseURL()),
@@ -8,9 +9,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout(props: { children: React.ReactNode }) {
   return (
-    <html lang="en" data-mode="light" suppressHydrationWarning>
-      <body suppressHydrationWarning>
-        <main className="relative">{props.children}</main>
+    <html lang="fr" data-mode="light">
+      <body>
+        <I18nProvider>
+          <main className="relative">{props.children}</main>
+        </I18nProvider>
       </body>
     </html>
   )

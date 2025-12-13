@@ -940,7 +940,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@medusajs/icons@npm:2.12.1, @medusajs/icons@npm:^2.12.1":
+"@medusajs/icons@npm:2.12.2":
+  version: 2.12.2
+  resolution: "@medusajs/icons@npm:2.12.2"
+  peerDependencies:
+    react: ^18.3.1
+  checksum: 10/106df893b38602101ad2dc7b042654939292e1902c9dd91321fc8e496856ca1aa8d4828ff2fe074f5248b7abd933dec0077fad3246d636eac26912162634aa64
+  languageName: node
+  linkType: hard
+
+"@medusajs/icons@npm:^2.12.1":
   version: 2.12.1
   resolution: "@medusajs/icons@npm:2.12.1"
   peerDependencies:
@@ -950,18 +959,18 @@ __metadata:
   linkType: hard
 
 "@medusajs/js-sdk@npm:latest":
-  version: 2.12.1
-  resolution: "@medusajs/js-sdk@npm:2.12.1"
+  version: 2.12.2
+  resolution: "@medusajs/js-sdk@npm:2.12.2"
   dependencies:
     fetch-event-stream: "npm:^0.1.5"
     qs: "npm:^6.12.1"
-  checksum: 10/d5adbca3697a323f624e4500c2697257f00250fa81a6128d607821decd173e43fc7e288ad543c2462976fb7ec8c2dfa45c362a383a5f94abbda88ede73467106
+  checksum: 10/c765fdd59995136d58498be4f0cfde6af1bfab3ce8895fb2e96be971c55f6cd740209610ee7bd55d174577610aefda6d9d049d331b752293947f6c729c39b014
   languageName: node
   linkType: hard
 
 "@medusajs/types@npm:latest":
-  version: 2.12.1
-  resolution: "@medusajs/types@npm:2.12.1"
+  version: 2.12.2
+  resolution: "@medusajs/types@npm:2.12.2"
   dependencies:
     bignumber.js: "npm:^9.1.2"
   peerDependencies:
@@ -972,30 +981,30 @@ __metadata:
       optional: true
     vite:
       optional: true
-  checksum: 10/42cfc12b0d27ad87248d235eaea5ff3edf085b33d6c7504753ecd983b689c461f60b9bbc7034af5809e870b4b65e0efedb7adbf7f604796acfabfbf91cb4c7bf
+  checksum: 10/eebd4b3468a316fdd002d575535a1dcbd005def35494d8c6edf3b942b1d645ea8e2a899517768d2f5f2410ff22d5a82307c6163808d58b7e048fa0b46459acc5
   languageName: node
   linkType: hard
 
 "@medusajs/ui-preset@npm:latest":
-  version: 2.12.1
-  resolution: "@medusajs/ui-preset@npm:2.12.1"
+  version: 2.12.2
+  resolution: "@medusajs/ui-preset@npm:2.12.2"
   dependencies:
     "@tailwindcss/forms": "npm:^0.5.3"
     tailwindcss-animate: "npm:^1.0.6"
   peerDependencies:
     tailwindcss: ^3.4.3
-  checksum: 10/4bf622b17b710b498c4b2865f56932bb9efc276b92bdaa0063776458b6c99936b82e6d031e861f5e12f58479cc39a1d1de37bd90c6999c3c6faa5b358a5d7cb0
+  checksum: 10/306f906a0c584150b6d28bd98931f4899fd84a5ddf3e3b585a4d372dabd24e8058608b6c32ffd9d608c240a4957b9eb362b542d4025b0ba86a89daf1cb8eaf10
   languageName: node
   linkType: hard
 
 "@medusajs/ui@npm:latest":
-  version: 4.0.29
-  resolution: "@medusajs/ui@npm:4.0.29"
+  version: 4.0.30
+  resolution: "@medusajs/ui@npm:4.0.30"
   dependencies:
     "@dnd-kit/core": "npm:^6.1.0"
     "@dnd-kit/sortable": "npm:^8.0.0"
     "@dnd-kit/utilities": "npm:^3.2.2"
-    "@medusajs/icons": "npm:2.12.1"
+    "@medusajs/icons": "npm:2.12.2"
     "@radix-ui/react-dialog": "npm:1.1.4"
     "@radix-ui/react-dismissable-layer": "npm:1.1.4"
     "@tanstack/react-table": "npm:8.20.5"
@@ -1013,7 +1022,7 @@ __metadata:
   peerDependencies:
     react: ^18.3.1
     react-dom: ^18.3.1
-  checksum: 10/450a7bc554f9f673c7ecaebbbc3d2474fb79100f91cac2ef90167a96427ae51b692152119dbbb56d80c2fce419ad253a31ace3031a0c3f29fb00f8c03c349bd9
+  checksum: 10/49e0231d5c8318d6a379c48b528f3c8b3741f38b3489738c02890bae9737c70b520965a0d733ad02c3c538f8a5e839a827a208677bc2a7b80a1abaa1b3f24786
   languageName: node
   linkType: hard
 
