@@ -73,4 +73,11 @@ export default {
   "lang.french": "Français",
   "lang.english": "English",
   "lang.switchTo": "Changer de langue",
+
+  // Store page
+  "store.title": "Tous les produits",
+  "store.sortBy": "Trier par",
+  "store.latestArrivals": "Dernières nouveautés",
+  "store.priceLowToHigh": "Prix : croissant",
+  "store.priceHighToLow": "Prix : décroissant",
 } as const
